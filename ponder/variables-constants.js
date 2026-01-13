@@ -19,4 +19,6 @@ if (true) {
     console.log("Inside block - course:", course);  
     console.log("Inside block - student:", student); 
 }
-console.log("Outside block - course:", course); 
+console.log("Outside block - course:",course); 
+
+
