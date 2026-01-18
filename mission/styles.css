@@ -8,6 +8,12 @@ body {
     font-family: Georgia, serif;
     background-color: #f5f5f5;
     padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 }
 
 .container {
@@ -17,6 +23,30 @@ body {
     padding: 50px 100px;
     border: 1px solid #ddd;
     text-align: center;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .container {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+.theme-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+.theme-button:hover {
+    transform: scale(1.1);
 }
 
 h1 {
@@ -26,6 +56,11 @@ h1 {
     margin-bottom: 10px;
     color: #000;
     line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode h1 {
+    color: #ffffff;
 }
 
 .subtitle {
@@ -37,6 +72,12 @@ h1 {
     margin-top: 0;
     border-bottom: 2px solid #0066cc;
     padding-bottom: 12px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .subtitle {
+    color: #66b3ff;
+    border-bottom-color: #66b3ff;
 }
 
 .content {
@@ -50,6 +91,11 @@ h1 {
     color: #000;
     font-weight: normal;
     text-align: justify;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .content p {
+    color: #e0e0e0;
 }
 
 .university-does {
@@ -57,6 +103,11 @@ h1 {
     margin-top: 18px;
     margin-bottom: 12px;
     font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .university-does {
+    color: #e0e0e0;
 }
 
 ol {
@@ -67,6 +118,11 @@ ol {
     margin-left: 0;
     padding-left: 36px;
     margin-bottom: 35px;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode ol {
+    color: #e0e0e0;
 }
 
 li {
