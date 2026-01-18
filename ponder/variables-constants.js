@@ -21,4 +21,20 @@ if (true) {
 }
 console.log("Outside block - course:",course); 
 
+const selectElem = document.getElementById('webdevlist');
+const output = document.getElementById('output');
+
+selectElem.addEventListener('change', function () {
+    const codeValue = selectElem.value;
+
+    if (codeValue === 'html') {
+        output.textContent = 'HTML defines the structure and content of a web page.';
+    } else if (codeValue === 'css') {
+        output.textContent = 'CSS controls the layout, colors, and visual design of a page.';
+    } else if (codeValue === 'js') {
+        output.textContent = 'JavaScript adds interactivity and dynamic behavior.';
+    } else {
+        output.textContent = '';
+    }
+});
 
