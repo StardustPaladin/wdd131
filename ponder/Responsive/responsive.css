@@ -30,11 +30,20 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
+nav {
+    display: block;
+}
+
+nav.hide {
+    display: none;
+}
+
 nav a {
     padding: 20px;
     color: black;
-    display: none;
+    display: block;
 }
+
 nav a:hover {
     text-decoration: none;
     color: #616061;
@@ -49,6 +58,19 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.3s;
+}
+
+.menu-btn.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-btn.change .bar2 {
+    opacity: 0;
+}
+
+.menu-btn.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
 }
 footer {
     text-align: center;
@@ -62,11 +84,12 @@ footer {
     .menu-btn{
         display: none;
     }
+    nav {
+        display: block;
+        text-align: right;
+    }
     nav a {
         display: inline;
-    }
-    nav {
-        text-align: right;
     }
 }
           
