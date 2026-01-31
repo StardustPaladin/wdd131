@@ -10,8 +10,9 @@
     <header>
         <div class="header-container">
             <h1>Cool Pics 📷</h1>
+            <button class="menu-btn" id="hamburgerBtn" aria-label="Toggle menu">Menu</button>
         </div>
-        <nav class="menu">
+        <nav class="menu" id="mobileMenu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -23,20 +24,30 @@
 
     <main>
         <section class="gallery">
-            <img src="images/pic.jpg" alt="Gallery image 1">
-            <img src="images/pic.jpg" alt="Gallery image 2">
-            <img src="images/pic.jpg" alt="Gallery image 3">
-            <img src="images/pic.jpg" alt="Gallery image 4">
-            <img src="images/pic.jpg" alt="Gallery image 5">
-            <img src="images/pic.jpg" alt="Gallery image 6">
-            <img src="images/pic.jpg" alt="Gallery image 7">
-            <img src="images/pic.jpg" alt="Gallery image 8">
-            <img src="images/pic.jpg" alt="Gallery image 9">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 1">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 2">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 3">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 4">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 5">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 6">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 7">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 8">
+            <img loading="lazy" src="images/pic.jpg" alt="Gallery image 9">
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Cool Pics. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for image viewing -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <img class="modal-image" id="modalImage" src="" alt="Full size image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
