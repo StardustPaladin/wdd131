@@ -102,15 +102,15 @@ const students = [
 ];
 
 students.forEach(function(item){
-    let name = documnet.creteElement('div');
+    let name = document.createElement('div');
     name.className = 'format';
 
     let html = `
     <span>${item.first}</span>
     <span>${item.last}</span>
-    <hr>`
-    ;
+    <hr>
+    `;
 
     name.innerHTML = html;
     container.appendChild(name);
-});
+})
