@@ -13,7 +13,7 @@ const articles = [
     imgAlt: 'Book cover for Septimus Heap 1',
     ages: '10-14',
     genre: 'Fantasy',
-    stars: '⭐⭐⭐⭐⭐'
+    stars: '⭐⭐⭐⭐'
   },
   {
     id: 2,
