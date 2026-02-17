@@ -1,79 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Book Blog - Discover and explore great books">
-    <title>Book Blog</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>Book Blog</h1>
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#books">Books</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
-        <hr>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kids Read For Fun — Septimus Heap: Magyk</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="inner">
+        <h1 class="site-title">Kids Read For Fun</h1>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Archive</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr class="accent-line" />
     </header>
 
-    <main>
-        <section class="articles">
-            <article class="book-card">
-                <div class="book-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" 
-                         alt="Magyk book cover by Angie Sage - First book in the Septimus Heap series" 
-                         loading="lazy">
-                </div>
-                
-                <div class="book-content">
-                    <h2>Magyk</h2>
-                    
-                    <div class="book-meta">
-                        <p><strong>Author:</strong> <span>Angie Sage</span></p>
-                        <p><strong>Genre:</strong> <span>Fantasy</span></p>
-                        <p><strong>Published:</strong> <span>March 2005</span></p>
-                    </div>
-                    
-                    <section class="book-description">
-                        <h3>Description</h3>
-                        <p>
-                            Magyk is the first book in the Septimus Heap series, following the adventures of Jenna, a young princess 
-                            raised as a common girl, and Septimus, a boy raised in the Young Army who discovers he is the seventh son 
-                            of a seventh son. When their worlds collide, they embark on a thrilling journey filled with magic, mystery, 
-                            and danger. With the help of Marcia Overstrand, the ExtraOrdinary Wizard, they must escape the clutches of 
-                            evil forces and discover their true destinies in a richly detailed magical world.
-                        </p>
-                    </section>
-                    
-                    <section class="book-review">
-                        <h3>Review</h3>
-                        <p>
-                            A captivating fantasy adventure that captures readers from the very first page. Angie Sage masterfully 
-                            weaves together multiple storylines and creates a richly detailed world of magic and wonder. The New York Post 
-                            recommends it for fans of Harry Potter, and with good reason—the characters are memorable, the plot is 
-                            engaging, and the magical system is creative and immersive. Perfect for middle-grade and young adult readers 
-                            seeking an escape into a world where anything is possible.
-                        </p>
-                    </section>
-                    
-                    <div class="book-action">
-                        <button class="btn-primary" aria-label="Add this book to your reading list">Add to List</button>
-                        <button class="btn-secondary" aria-label="Share this book review">Share</button>
-                    </div>
-                </div>
-            </article>
+    <main id="main" class="site-main">
+      <article class="book-entry" aria-labelledby="book-title">
+        <aside class="book-meta" aria-label="Article details">
+          <time datetime="2022-07-05">July 5, 2022</time>
+          <div class="ages">10-14</div>
+          <div class="genre">Fantasy</div>
+          <div class="rating" aria-hidden="true">★★★★☆</div>
+        </aside>
+
+        <section class="book-content">
+          <h2 id="book-title">Septimus Heap Book One: Magyk</h2>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Cover of Magyk by Angie Sage" width="220" height="320" loading="lazy" />
+          </figure>
+          <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
         </section>
+      </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Book Blog. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="footer-inner">Jane Doe</div>
     </footer>
-</body>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
