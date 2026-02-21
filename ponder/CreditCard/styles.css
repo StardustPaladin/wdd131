@@ -1,7 +1,7 @@
 
 .card-container form {
   position: relative;
-  min-height: 700px; 
+  min-height: 600px; 
 }
 .parent {
 display: grid;
