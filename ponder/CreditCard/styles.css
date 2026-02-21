@@ -1,0 +1,131 @@
+
+.card-container form {
+  position: relative;
+  min-height: 700px; 
+}
+.parent {
+display: grid;
+grid-template-columns: 100px 255px 100px;
+grid-template-rows: repeat(5, 41px);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr, 3f;
+  grid-area: 1 / 1 / 3 / 3; 
+  gap: 10px 10px;
+  background: #d3d3d3;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.2);
+  padding: 20px 20px 20px 20px;
+  width: 500px;
+  height: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 1.1em;
+}
+
+.card .total {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  align-self: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.card img {
+  grid-column: 3 / 3;
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
+  width: 60px;
+  position: static;
+}
+.card label[for="card-number"] {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  font-size: 1.1em;
+}
+.card input[name="card-number"] {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  max-width: 95%;
+  font-size: 1.1em;
+}
+.card label[for="card-holder"] {
+  grid-column: 1 / 3;
+  grid-row: 4;
+  font-size: 1.1em;
+}
+.card input[name="card-holder"] {
+  grid-column: 1 / 3;
+  grid-row: 5;
+  max-width: 95%;
+  font-size: 1.1em;
+}
+.card label[for="exp-month"] {
+  grid-column: 3;
+  grid-row: 4;
+  justify-self: start;
+  font-size: 1.1em;
+}
+.card .exp {
+  grid-column: 3 / 5;
+  grid-row: 5;
+  display: flex;
+  gap: 10px;
+}
+.card .exp input {
+  max-width: 60px;
+  width: 60px;
+  font-size: 1.1em;
+}
+
+.card-back {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-area: 2 / 2 / 4 / 4;
+  position: absolute;
+  top: 180px;
+  left: 320px;
+  gap: 10px 10px;
+  background: #d3d3d3;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.2);
+  padding: 20px 20px 20px 20px;
+  width: 500px;
+  height: 320px;
+  z-index: 1;
+  font-size: 1.2em;
+}
+.mag-strip {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: black;
+}
+.card-back .cvc-label {
+  grid-column: 4;
+  grid-row: 2;
+  font-size: 1.1em;
+}
+.card-back .cvc {
+  grid-column: 4;
+  grid-row: 3;
+  max-width: 95%;
+  font-size: 1.1em;
+}
+.submit-btn {
+  position: absolute;
+  grid-area: 5 / 3 / 6 / 4;
+  right: 24px;
+  bottom: 24px;
+  margin: 0;
+}

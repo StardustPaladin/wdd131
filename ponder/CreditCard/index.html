@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="C:\Users\Ehero\OneDrive - BYU-Idaho\Code\Winter2026\wdd131\ponder\CreditCard\images\favicon.ico">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+     <div class="card-container">
+  <form>
+    <div class="card">
+      <div class="total">TOTAL: $199</div>
+      <img src="images/favicon.ico" alt="Card image" />
+      
+      <label for="card-number">CARD NUMBER</label>
+      <input 
+      type="text" 
+      id="card-number" 
+      name="card-number" 
+      placeholder="1234 5678 9101 1020" 
+      />
+
+      <label for="card-holder">CARD HOLDER</label>
+      <input 
+      type="text" 
+      id="card-holder" 
+      name="card-holder" 
+      placeholder="John Doe" 
+      />
+
+      <div class="exp" id="cardExpiration">
+        <label for="month">EXPIRATION</label>
+        <input 
+        type="text" 
+        id="month" 
+        name="expMonth" 
+        placeholder="MM" 
+        aria-labelledby="expirationDate" 
+        maxlength="2">
+        <input 
+        type="text" 
+        id="year" 
+        name="expYear" 
+        placeholder="YY" 
+        aria-labelledby="expirationDate" 
+        maxlength="2">
+      </div>
+    </div>
+    <div class="card-back">
+  <div class="mag-strip"></div>
+      <label class="cvc-label" for="cvc">CVC/CVV</label>
+      <input 
+      class="cvc" 
+      type="text" 
+      id="cvc" 
+      name="cvc" 
+      placeholder="xxx" 
+      maxlength="3" />
+      
+    </div>
+    <button class="submit-btn" type="submit">Submit</button>
+  </form>
+</div>
+      </form>
+    </main>
+  </body>
+</html>
