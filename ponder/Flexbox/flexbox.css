@@ -17,7 +17,7 @@ max-width: 100%;
 list-style-type: none;
 display: flex;
 gap: 1em;
-flex-direction: column;
+flex-direction: row;
 }
 
 .media-card {
@@ -45,7 +45,7 @@ margin-top: 50px;
     .main-nav {
     flex-direction: row;
     justify-content: flex-end;
-}
+    }
     .media-card{
     flex-direction: row;
     }
