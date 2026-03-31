@@ -2,57 +2,61 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <title>Hallownest Explorer — Home</title>
-
     <meta
       name="description"
-      content="Explore the mysterious world of Hallownest from Hollow Knight. Discover regions, lore, and secrets."
+      content="Explore the regions of Hallownest with interactive cards."
     />
     <meta name="author" content="Joey Boehner" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Hallownest Explorer" />
+    <meta
+      property="og:title"
+      content="Explore Hallownest — Hallownest Explorer"
+    />
     <meta
       property="og:description"
-      content="A fan site exploring the world of Hollow Knight and its hidden secrets."
+      content="Dive into Hallownest's regions, uncover secrets, and track your discoveries."
     />
     <meta
       property="og:url"
-      content="https://StardustPaladin.github.io/wdd131/hallownest-explorer/"
+      content="https://yourgithubusername.github.io/wdd131/explore.html"
     />
 
     <link rel="icon" href="images/favicon.ico" />
-
     <link rel="stylesheet" href="site-plan.css" />
+    <script src="explore.js"></script>
+    <title>Explore Hallownest — Hallownest Explorer</title>
   </head>
-  <body class="home">
+  <body>
     <header>
       <h1>Hallownest Explorer</h1>
       <h2>Joey Boehner</h2>
       <h2>WDD 131-A2</h2>
     </header>
-
     <nav class="nav-bar">
       <img src="images/logo.jpg" alt="Hallownest Logo" class="nav-logo" />
       <a href="index.html">Home</a>
       <a href="explore.html">Explore</a>
       <a href="site-plan.html">Site Plan</a>
     </nav>
-
     <main>
-      <section class="hero">
-        <img src="images/homepage 1.png" alt="Hollow Knight artwork" />
-        <div class="hero-text">
-          <h2>Welcome</h2>
+      <section class="hero-2">
+        <div class="hero-text-2">
+          <h1>Explore the Regions of Hallownest</h1>
           <p>
-            Welcome to Hallownest Explorer, a fan site dedicated to the
-            mysterious underground world of Hollow Knight.Explore the
-            interconnected regions of Hallownest and uncover the secrets,
-            challenges, and history hidden throughout the kingdom.
+            Dive deep into the underground kingdom, uncover hidden secrets, and
+            track your discoveries.
           </p>
-          <p><a href="explore.html">Map</a></p>
         </div>
+      </section>
+
+      <section class="regions">
+        <h2>Regions</h2>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search regions..." />
+        </div>
+        <div id="regions-container" class="regions-container"></div>
       </section>
     </main>
 

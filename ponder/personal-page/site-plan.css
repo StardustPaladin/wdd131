@@ -32,7 +32,12 @@ img {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -41,8 +46,7 @@ h2 {
   text-align: center;
 }
 
-h3
-{
+h3 {
   text-align: center;
 }
 
@@ -64,8 +68,8 @@ header {
   background-color: var(--paragraph-background-color);
 }
 
-header > h1,
-header > h2 {
+header>h1,
+header>h2 {
   color: var(--headline-color-on-color);
 }
 
@@ -134,7 +138,7 @@ nav a:hover {
     "page2 page2 . . page3 page3";
 }
 
-.sitemap > div {
+.sitemap>div {
   text-align: center;
 }
 
@@ -172,6 +176,7 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
 footer {
   background-color: var(--primary-color);
   text-align: center;
@@ -182,4 +187,110 @@ footer {
 footer p,
 footer a {
   color: var(--paragraph-color-on-color);
+}
+
+.region-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: var(--secondary-color);
+  color: var(--paragraph-color-on-color);
+  flex-wrap: wrap;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.region-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.region-card img {
+  width: 40%;
+  max-width: 250px;
+  margin: 1em;
+  border-radius: 15px;
+}
+
+.region-info {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+
+.region-card.image-left {
+  flex-direction: row;
+}
+
+.region-card.image-right {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .region-card {
+    flex-direction: column !important;
+  }
+
+  .region-card img {
+    width: 80%;
+  }
+}
+
+.toggle-btn {
+  background-color: var(--accent1-color);
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: var(--paragraph-font);
+}
+
+.toggle-btn:hover {
+  background-color: var(--accent2-color);
+}
+
+.full-description {
+  margin-top: 10px;
+}
+
+.search-container {
+  text-align: center;
+  margin: 1em 0;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+  font-size: 1em;
+  font-family: var(--paragraph-font);
+}
+
+.region-card h2,
+.region-card h3,
+.region-card p {
+  color: var(--paragraph-color-on-color);
+}
+
+.region-card h2,
+.region-card h3 {
+  color: var(--headline-color-on-color);
+}
+
+.hero-text-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
 }
