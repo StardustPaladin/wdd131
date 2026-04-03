@@ -294,3 +294,8 @@ footer a {
   align-items: center; 
   gap: 20px;
 }
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
